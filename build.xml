@@ -1138,7 +1138,10 @@
           <then>
             <var name="advpng.available" value="false"/>
           </then>
-        </if>
+          <else>
+            <var name="advpng.available" value="true"/>
+          </else>
+         </if>
         
         <if>
             <equals arg1="${advpng.available}" arg2="true"/>
